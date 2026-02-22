@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 333 40% 98%;
+    --foreground: 0 0% 0%;
+
+    --card: 333 40% 100%;
+    --card-foreground: 0 0% 0%;
+
+    --popover: 333 40% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    --primary: 333 80% 70%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 333 50% 94%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 333 20% 92%;
+    --muted-foreground: 0 0% 30%;
+
+    --accent: 333 90% 96%;
+    --accent-foreground: 333 80% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 333 30% 85%;
+    --input: 333 30% 85%;
+    --ring: 333 80% 70%;
+
+    --radius: 1rem;
+
+    --sage: 333 35% 38%;
+    --sage-foreground: 0 0% 100%;
+    --peach: 333 80% 93%;
+
+    --sidebar-background: 333 40% 97%;
+    --sidebar-foreground: 0 0% 10%;
+    --sidebar-primary: 333 80% 70%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 333 90% 96%;
+    --sidebar-accent-foreground: 0 0% 10%;
+    --sidebar-border: 333 30% 85%;
+    --sidebar-ring: 333 80% 70%;
+  }
+
+  .dark {
+    --background: 333 35% 8%;
+    --foreground: 333 40% 95%;
+
+    --card: 333 30% 12%;
+    --card-foreground: 333 40% 95%;
+
+    --popover: 333 30% 12%;
+    --popover-foreground: 333 40% 95%;
+
+    --primary: 333 80% 75%;
+    --primary-foreground: 333 10% 10%;
+
+    --secondary: 333 25% 18%;
+    --secondary-foreground: 333 40% 90%;
+
+    --muted: 333 15% 16%;
+    --muted-foreground: 333 15% 65%;
+
+    --accent: 333 40% 18%;
+    --accent-foreground: 333 70% 85%;
+
+    --destructive: 0 62% 35%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 333 20% 18%;
+    --input: 333 20% 18%;
+    --ring: 333 89% 81%;
+
+    --sage: 333 30% 35%;
+    --sage-foreground: 0 0% 100%;
+    --peach: 333 40% 20%;
+
+    --sidebar-background: 333 35% 6%;
+    --sidebar-foreground: 333 30% 90%;
+    --sidebar-primary: 333 80% 75%;
+    --sidebar-primary-foreground: 333 10% 10%;
+    --sidebar-accent: 333 20% 14%;
+    --sidebar-accent-foreground: 333 40% 90%;
+    --sidebar-border: 333 20% 18%;
+    --sidebar-ring: 333 89% 81%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
